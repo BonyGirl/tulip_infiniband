@@ -6,7 +6,7 @@ FIND_PACKAGE(IBAUTIL REQUIRED)
 
 add_definitions(-Wall -std=c++0x -fPIC)
 
-find_package(TULIP REQUIRE)
+find_package(TULIP REQUIRED)
 include_directories("${TULIP_INCLUDE_DIR}")
 message(STATUS "${TULIP_CORE_LIBRARY}")
 target_link_libraries(tuliptest ${TULIP_CORE_LIBRARY})
