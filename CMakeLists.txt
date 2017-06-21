@@ -8,8 +8,6 @@ add_definitions(-Wall -std=c++0x -fPIC)
 
 find_package(TULIP REQUIRED)
 include_directories("${TULIP_INCLUDE_DIR}")
-message(STATUS "${TULIP_CORE_LIBRARY}")
-target_link_libraries(tuliptest ${TULIP_CORE_LIBRARY})
 
 SET(RE2_DIR ${PROJECT_SOURCE_DIR})
 FIND_PACKAGE(RE2 REQUIRED)
